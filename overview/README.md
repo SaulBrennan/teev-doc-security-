@@ -1,6 +1,6 @@
 # Teev AI Documentation
 
-Welcome to the Teev AI documentation site.X
+Welcome to the Teev AI documentation site.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ This is a placeholder page. Replace this content with your fresh documentation.
 
 ## Quick Setup
 
-To run this documentation site locally:X
+To run this documentation site locally:
 
 ```bash
 cd docs/overview
