@@ -7,6 +7,12 @@ branding:
   title: Teev AI
   label: Docs
 
+edit:
+  repo: ""
+  base: ""
+  branch: ""
+  label: ""
+
 links:
 - text: GitHub
   link: https://github.com/SaulBrennan/teev-doc-security-
