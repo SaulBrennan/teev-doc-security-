@@ -1,0 +1,15 @@
+input: .
+output: .retype
+
+url: https://teev-doc-security.vercel.app
+
+branding:
+  title: Teev AI
+  label: Docs
+
+links:
+- text: GitHub
+  link: https://github.com/SaulBrennan/teev-doc-security-
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved." 
