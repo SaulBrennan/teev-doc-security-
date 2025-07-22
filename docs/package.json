@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "Documentation for Garak project",
+  "description": "Documentation for Teev AI platform",
   "devDependencies": {
     "retypeapp": "^3.11.0"
   }
