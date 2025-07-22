@@ -8,7 +8,7 @@ This is a placeholder page. Replace this content with your fresh documentation.
 
 ## Quick Setup
 
-To run this documentation site locally:S
+To run this documentation site locally:
 
 ```bash
 cd docs/overview
