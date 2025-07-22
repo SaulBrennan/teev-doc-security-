@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd overview && npm install && npm run build",
+  "outputDirectory": "overview/.retype",
+  "installCommand": "cd overview && npm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+} 
