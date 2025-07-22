@@ -1,19 +1,13 @@
 #!/bin/bash
 
 # Usage: ./git.sh "Your commit message here"
-# This script uploads docs and everything under the docs directory to git
+# This script uploads all documentation content to git
 
 # Default commit message if none provided
 COMMIT_MSG=${1:-"Update documentation"}
 
-# Get the script directory (docs/)
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-# Go to the project root (parent of docs)
-cd "$SCRIPT_DIR/.."
-
-echo "📁 Adding docs directory and all contents to git..."
-git add docs/
+echo "📁 Adding all documentation content to git..."
+git add .
 
 echo "📝 Committing changes..."
 git commit -m "$COMMIT_MSG"
