@@ -1,0 +1,10 @@
+input: docs
+output: .retype
+
+branding:
+  title: Teev AI Docs
+  label: Docs
+
+navigation:
+  - "Home": index.md
+  - "DOCUMENTATION": documentation/index.md
