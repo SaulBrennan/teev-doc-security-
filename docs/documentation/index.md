@@ -1,6 +1,8 @@
 ---
-label: Documentation
-icon: book
+label: User Guide
+icon: book-open
 ---
 
-# Documentation Overview
+# User Guide
+
+Complete guide for using the system effectively.

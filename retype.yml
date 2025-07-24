@@ -2,9 +2,23 @@ input: docs
 output: .retype
 
 branding:
-  title: Teev AI Docs
-  label: Docs
+  title: 
+  label: V2.03
+  logo: static/logo.png
+  logoDark: static/logo.png    # optional (dark mode)
+  logoAlign: left              # or 'right'
+
+favicon: static/favicon.png
+
+editor:
+  enabled: false
+
+# Note: 'edit:' section removed (no repo specified)
 
 navigation:
   - "Home": index.md
-  - "DOCUMENTATION": documentation/index.md
+  - "USER GUIDE": documentation/index.md
+  - "PROBE GROUPS": probe-groups/index.md
+  - "API DOCS": api-docs/index.md
+  - "INTEGRATIONS": integrations/index.md
+  - "SUPPORT": support/index.md

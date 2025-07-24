@@ -2,4 +2,4 @@
 icon: home
 ---
 
-# Welcome to Teev AI Docs
+# Welcome to Teev AI DocsX
