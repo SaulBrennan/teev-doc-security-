@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd overview && npm install && npm run build",
-  "outputDirectory": "overview/.retype",
-  "installCommand": "cd overview && npm install",
+  "buildCommand": "npx retype build",
+  "outputDirectory": ".retype",
+  "installCommand": "npm install -g retypeapp",
   "framework": null,
   "rewrites": [
     {
