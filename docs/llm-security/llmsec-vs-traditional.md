@@ -1,294 +1,68 @@
 ---
-label: LLMSec vs Traditional CyberSec
-icon: compare
+label: Differences to CyberSec
+icon: horizontal-rule
+order: 100
 ---
 
-# LLM Security vs Traditional Cybersecurity
-
-Understanding the fundamental differences between AI security and traditional cybersecurity approaches.
-
-## Key Differences
-
-### Attack Surface
-
-**Traditional Cybersecurity**
-- Defined interfaces and entry points
-- Controlled input formats and validation
-- Clear network boundaries and perimeters
-- Limited user interaction patterns
-
-**LLM Security**
-- Natural language as universal interface
-- Every user prompt is a potential attack vector
-- Ambiguous boundaries between legitimate and malicious input
-- Complex, emergent behaviors from simple inputs
-
-### Threat Landscape
-
-**Traditional Threats**
-- SQL injection, XSS, buffer overflows
-- Network intrusions and malware
-- Privilege escalation attacks
-- Data breaches through system vulnerabilities
-
-**LLM-Specific Threats**
-- Prompt injection and jailbreaking
-- Training data extraction and memorization
-- Model manipulation and adversarial inputs
-- Unintended information disclosure through generation
-
-### Defense Strategies
-
-**Traditional Defenses**
-- Input validation and sanitization
-- Network segmentation and firewalls
-- Access controls and authentication
-- Signature-based detection systems
-
-**LLM Defenses**
-- Content filtering and safety guardrails
-- Prompt validation and normalization
-- Output monitoring and filtering
-- Behavioral analysis and anomaly detection
-
-## Unique Challenges in AI Security
-
-### 1. Interpretability and Explainability
-
-**The Challenge**
-- AI models operate as "black boxes" with limited interpretability
-- Difficult to understand why certain outputs are generated
-- Complex relationships between inputs and outputs
-- Emergent behaviors not explicitly programmed
-
-**Security Implications**
-- Hard to predict all possible attack vectors
-- Difficult to debug security failures
-- Challenges in implementing precise controls
-- Limited ability to perform root cause analysis
-
-### 2. Data Poisoning and Model Integrity
-
-**Training Data Attacks**
-- Malicious data injection during training
-- Subtle manipulations that affect model behavior
-- Backdoor attacks embedded in training data
-- Distribution shift attacks
-
-**Model Extraction**
-- Inference attacks to reverse-engineer models
-- Membership inference to determine training data
-- Model stealing through query optimization
-- Intellectual property theft
-
-### 3. Dynamic and Evolving Threats
-
-**Rapid Innovation**
-- New attack methods emerge faster than defenses
-- Adversarial creativity in prompt engineering
-- Cross-model attack transferability
-- Community-driven vulnerability discovery
-
-**Adaptive Attackers**
-- Automated generation of adversarial prompts
-- Multi-step attack chains and persistence
-- Social engineering through AI personas
-- Context-aware attack optimization
-
-## Traditional Security Controls vs AI Security
-
-### Access Control
-
-**Traditional Approach**
-```
-User → Authentication → Authorization → Resource Access
-```
-
-**AI Security Approach**
-```
-User → Prompt → Content Filter → Model → Output Filter → Response
-```
-
-**Key Differences**
-- Traditional: Binary access decisions (allow/deny)
-- AI: Continuous content evaluation and filtering
-- Traditional: Role-based permissions
-- AI: Context-aware, dynamic content controls
-
-### Input Validation
-
-**Traditional Validation**
-- Schema validation (XML, JSON)
-- Data type and format checking
-- Range and boundary validation
-- Whitelist/blacklist filtering
-
-**AI Input Validation**
-- Semantic content analysis
-- Intent classification and filtering
-- Adversarial prompt detection
-- Context-aware input normalization
-
-### Monitoring and Detection
-
-**Traditional Monitoring**
-- Log analysis and correlation
-- Network traffic inspection
-- Behavioral anomaly detection
-- Signature-based threat detection
-
-**AI Security Monitoring**
-- Conversation flow analysis
-- Output quality and safety monitoring
-- Prompt pattern recognition
-- Multi-turn attack detection
-
-## Risk Assessment Frameworks
-
-### Traditional Risk Assessment
-
-**Assets → Threats → Vulnerabilities → Impact**
-
-1. **Asset Identification**: Systems, data, networks
-2. **Threat Modeling**: Known attack patterns and actors
-3. **Vulnerability Assessment**: Technical weaknesses
-4. **Impact Analysis**: Business and operational consequences
-
-### AI Risk Assessment
-
-**Model → Data → Interactions → Behaviors**
-
-1. **Model Assessment**: Architecture, training, capabilities
-2. **Data Analysis**: Training data quality, biases, privacy
-3. **Interaction Evaluation**: User patterns, prompt diversity
-4. **Behavior Analysis**: Output quality, safety, consistency
-
-## Compliance and Regulatory Considerations
-
-### Traditional Compliance
-
-**Established Frameworks**
-- ISO 27001, NIST Cybersecurity Framework
-- SOC 2, PCI DSS, HIPAA
-- GDPR, CCPA for data protection
-- Industry-specific regulations
-
-**Mature Processes**
-- Well-defined control objectives
-- Standardized assessment procedures
-- Clear compliance evidence requirements
-- Established audit practices
-
-### AI Compliance Landscape
-
-**Emerging Regulations**
-- EU AI Act and AI Liability Directive
-- NIST AI Risk Management Framework
-- Algorithmic Accountability Acts
-- Industry-specific AI guidelines
-
-**Evolving Requirements**
-- Risk-based approach to AI governance
-- Transparency and explainability mandates
-- Bias detection and mitigation requirements
-- Human oversight and intervention capabilities
-
-## Integration Strategies
-
-### Complementary Approaches
-
-**Layered Security Model**
-1. **Infrastructure Security**: Traditional network and system security
-2. **Application Security**: Standard web application protections
-3. **AI-Specific Security**: Model and content-specific controls
-4. **Operational Security**: Monitoring, incident response, governance
-
-### Unified Security Operations
-
-**Shared Components**
-- Centralized logging and monitoring
-- Integrated incident response procedures
-- Common risk management frameworks
-- Coordinated threat intelligence
-
-**Specialized Components**
-- AI-specific threat detection
-- Model performance monitoring
-- Content safety assessment
-- Prompt injection protection
-
-## Best Practices for Hybrid Security
-
-### 1. Defense in Depth
-
-**Traditional Layers**
-- Network security and segmentation
-- Endpoint protection and monitoring
-- Identity and access management
-- Data encryption and protection
-
-**AI Security Layers**
-- Input validation and prompt filtering
-- Model guardrails and safety measures
-- Output monitoring and content filtering
-- Behavioral analysis and anomaly detection
-
-### 2. Continuous Assessment
-
-**Traditional Security Testing**
-- Periodic penetration testing
-- Vulnerability scanning schedules
-- Compliance audits and assessments
-- Security control effectiveness reviews
-
-**AI Security Testing**
-- Continuous red teaming exercises
-- Automated adversarial testing
-- Model performance degradation monitoring
-- Safety and alignment verification
-
-### 3. Incident Response Integration
-
-**Unified Response Procedures**
-- Common incident classification systems
-- Integrated escalation procedures
-- Cross-functional response teams
-- Shared threat intelligence and indicators
-
-**AI-Specific Response Capabilities**
-- Model rollback and versioning
-- Content filter emergency updates
-- Conversation context preservation
-- Safety override mechanisms
-
-## The Future of Integrated Security
-
-### Convergence Trends
-
-**Technology Integration**
-- AI-powered traditional security tools
-- Traditional security controls for AI systems
-- Unified security management platforms
-- Cross-domain threat intelligence sharing
-
-**Operational Integration**
-- Shared security teams and expertise
-- Common governance frameworks
-- Integrated risk assessment processes
-- Unified compliance and audit procedures
-
-### Emerging Challenges
-
-**Complexity Management**
-- Balancing multiple security domains
-- Resource allocation and prioritization
-- Skill set development and training
-- Technology stack integration
-
-**Regulatory Harmonization**
-- Aligning AI and traditional compliance requirements
-- Managing overlapping jurisdiction requirements
-- Adapting existing frameworks for AI systems
-- Developing integrated audit procedures
-
-Understanding these differences is crucial for developing effective security strategies that address both traditional cyber threats and emerging AI-specific risks. Organizations must adopt a hybrid approach that leverages the strengths of both traditional cybersecurity and modern AI security practices. 
+# Differences to CyberSec
+As enterprises build AI-powered applications on top of large language models (LLMs), it’s critical to recognize that traditional cybersecurity frameworks no longer apply cleanly. The attack surface, threat landscape, and defense strategies are fundamentally different. Unlike classical systems with structured inputs and clear perimeters, LLMs introduce ambiguous interfaces, emergent behaviors, and novel risks like prompt injection, hallucinations, and training data leakage. These applications operate in a grey zone—where the threats are linguistic, probabilistic, and constantly evolving.
+
+Below is a comparison table highlighting the operational differences between traditional cybersecurity and LLM/AI security (LLMSec). It outlines how attack vectors, monitoring strategies, and security controls diverge, and why enterprises need to adopt a new mindset when securing AI systems.
+
+Category {.compact}               | Traditional Cyber Security {.compact}                                           | LLM Security (LLMSec) {.compact}
+----------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------
+Attack Payload                    | Binary code, scripts, SQL/XSS injections, file uploads                          | Natural language prompts, encoded text, embedded instructions
+Attack Surface                    | Network ports, APIs, user input fields                                          | Prompt interface, context window, RAG memory, embedded content
+Input Validation                  | Format checks, schema validation, character escaping                            | Intent classification, adversarial prompt detection, semantic filtering
+Output Risks                      | Malformed HTML/JS, command injection, data exfiltration                         | Hallucinated code, unsafe responses, training data leakage
+Trust Boundary                    | Perimeter-based (firewalls, VPNs, RBAC)                                         | Blurred boundaries—model can cross logic tiers and business rules
+System Behavior                   | Deterministic; predictable from inputs                                          | Probabilistic; behavior influenced by prompt phrasing, context, history
+Detection Methods                 | Signature-based IDS/IPS, SIEM log correlation                                   | Output classifiers, prompt pattern recognition, behavioral anomaly detection
+Threat Vectors                    | Phishing, malware, lateral movement, privilege escalation                       | Prompt injection, jailbreaks, context poisoning, multi-turn attacks
+Patch Model                       | Update firewall rules, software patches, signature updates                      | Retrain model weights, update prompt templates, adjust filters
+Human Oversight                  | System administrators, SecOps teams                                             | AI safety reviewers, red teamers, human-in-the-loop moderators
+Monitoring Scope                  | Network traffic, system logs, access control logs                               | Prompt logs, output streams, conversation flow, classifier outputs
+Incident Response                 | Quarantine endpoint, block IPs, patch affected systems                          | Roll back model version, patch prompts, update output filters, escalate
+Attack Speed                      | Slower; requires exploit delivery or phishing success                           | Immediate; a single prompt can trigger unsafe behavior
+Control Points                    | OS kernel, firewalls, IAM systems                                               | Prompt pre/post-processing, context injectors, output filters, memory modules
+Tooling                           | Firewalls (Palo Alto), SIEM (Splunk), EDR (CrowdStrike)                         | Moderation APIs, Prompt injection tools (e.g., Garak), embedding filters
+Logging & Auditing                | Access logs, network traces, OS logs                                            | Prompt-response logs, output classifiers, memory access history
+Supply Chain Risk                 | Dependency hijacking, CI/CD pipeline compromise                                 | Hallucinated packages (slopsquatting), unverified generated code, RAG poisoning
+Security Mindset                  | Infrastructure-focused, threat is external                                      | Application-layer focused, threat can be user prompt or model behavior
+Skill Set Needed                  | Network/cloud/infra security experts                                            | Prompt engineers, AI red teamers, model safety experts, LangSec specialists
+
+## Attack Surface & Threat Landscape
+
+### Traditional Cybersecurity
+
+In traditional enterprise systems, the attack surface is relatively well-defined. Interfaces are constrained—such as API endpoints, network ports, or file upload mechanisms—and expected input formats are structured and validated. Threats like SQL injection, cross-site scripting (XSS), buffer overflows, and malware are well-understood and have mature defenses, including input sanitization, firewalls, intrusion detection systems, and endpoint protection.
+
+Security in this model typically focuses on protecting a known perimeter: securing ingress and egress points, authenticating users, and monitoring known traffic patterns. Vulnerabilities are often technical in nature, and mitigation strategies follow predictable, repeatable patterns grounded in decades of security best practices.
+
+### LLMSec
+LLM-powered applications break these assumptions. The primary interface is natural language—vastly more flexible, ambiguous, and user-controlled than traditional structured inputs. In this environment, every prompt a user submits becomes a potential attack vector, and it’s often difficult to draw a clear boundary between valid use and malicious manipulation.
+
+Unlike classical systems, LLMs exhibit emergent behaviors. A harmless-looking prompt can lead to harmful output depending on context, phrasing, or even past interactions. Attackers exploit this unpredictability through techniques like prompt injection (embedding malicious instructions into user input), jailbreaks (bypassing safety constraints), hallucinations (confidently generating false or dangerous content), and data leakage (surfacing memorized training data).
+
+These threats don’t fit neatly into the traditional security model. They operate at the level of intent, language, and behavior, requiring a fundamentally different approach to detection and mitigation—one that’s more probabilistic, adversarial, and dynamic in nature.
+
+## Unique Challenges of AI Security
+Securing AI systems—particularly those built on large language models—introduces challenges that traditional cybersecurity does not fully address. These systems behave probabilistically, adapt to context, and often function as black boxes. As a result, conventional assumptions about determinism, transparency, and threat modeling no longer hold. Below are three of the most critical, unique challenges in AI security.
+
+### Black-Box Complexity
+LLMs are inherently opaque. Their decisions emerge from billions of parameters, and even small input variations can lead to drastically different outputs.
+- Limited interpretability makes it difficult to understand why a model produced a specific result, complicating incident response and root-cause analysis.
+- Traditional debugging methods fall short when there’s no clear if-then logic to trace, and no logs of “decisions” in the classical sense.
+- As a result, identifying, reproducing, and fixing security failures is significantly harder than in traditional software systems.
+
+### Data Poisoning & Model Extraction
+Because LLMs are trained on vast, often opaque datasets, they are vulnerable to manipulation during both training and inference.
+- Data poisoning occurs when attackers introduce malicious content into the training set—intentionally skewing model behavior or embedding backdoors.
+- Membership inference attacks can reveal whether specific data was included in the training set, posing privacy risks for sensitive information.
+- Model extraction attacks allow adversaries to approximate or replicate proprietary models by querying them repeatedly, potentially stealing IP or identifying weaknesses.
+
+### Rapidly Evolving Threats
+The LLM threat landscape is moving faster than traditional defenses can adapt.
+- New attack techniques—such as prompt injection chains, typographic jailbreaks, or multimodal exploits—emerge regularly from the security community.
+- Cross-model transferability means a jailbreak or attack that works on one provider often works on others, accelerating the spread of threats.
+- Adversaries now include technically adept prompt engineers and automated systems capable of generating evolving attack patterns at scale.

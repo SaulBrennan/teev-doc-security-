@@ -1,6 +1,7 @@
 ---
 label: Red Teaming
-icon: crosshairs
+icon: horizontal-rule
+order: 1
 ---
 
 # AI Red Teaming

@@ -1,6 +1,7 @@
 ---
-label: Security Concepts
-icon: brain
+label: Framework
+icon: horizontal-rule
+order: 2
 ---
 
 # AI Security Concepts
