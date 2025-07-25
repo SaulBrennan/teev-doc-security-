@@ -3,10 +3,10 @@ output: .retype
 
 branding:
   title: 
-  label: V2.03
+  label: V2.04
   logo: static/logo.png
   logoDark: static/logo.png    # optional (dark mode)
-  logoAlign: left              # or 'right'
+  logoAlign: left              # or 'right'X
 
 favicon: static/favicon.png
 
