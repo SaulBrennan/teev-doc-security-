@@ -1,0 +1,9 @@
+/* Limit logo size on mobile */
+@media (max-width: 768px) {
+    .navbar-brand img {
+      content: url('/static/logo-mobile.png') !important;
+      max-height: 24px !important;
+      height: auto !important;
+      width: auto !important;
+    }
+  }

@@ -3,7 +3,7 @@ output: .retype
 
 branding:
   title: 
-  label: V2.04
+  label: V2.05
   logo: static/logo.png
   logoDark: static/logo.png    # optional (dark mode)
   logoAlign: left              # or 'right'X
@@ -12,6 +12,9 @@ favicon: static/favicon.png
 
 editor:
   enabled: false
+
+css:
+  - static/styles.css
 
 navigation:
   - "Welcome": index.md
