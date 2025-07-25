@@ -16,9 +16,9 @@ editor:
 # Note: 'edit:' section removed (no repo specified)
 
 navigation:
-  - "Home": index.md
-  - "USER GUIDE": documentation/index.md
-  - "PROBE GROUPS": probe-groups/index.md
-  - "API DOCS": api-docs/index.md
-  - "INTEGRATIONS": integrations/index.md
-  - "SUPPORT": support/index.md
+  - "Welcome": index.md
+  - "Overview": overview/index.md
+  - "User Guides": user-guides/index.md
+  - "LLM Security": llm-security/index.md
+  - "Test Scenarios": test-scenarios/index.md
+  - "Troubleshooting": troubleshooting/index.md
