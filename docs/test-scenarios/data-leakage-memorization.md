@@ -1,6 +1,7 @@
 ---
 label: Data Leakage & Memorization
-icon: database
+icon: horizontal-rule
+order: 170
 ---
 
 # Data Leakage and Memorization

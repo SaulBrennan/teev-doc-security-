@@ -1,6 +1,7 @@
 ---
 label: Linguistic & Behavioral Testing
-icon: search
+icon: horizontal-rule
+order: 150
 ---
 
 # Linguistic & Behavioral Testing

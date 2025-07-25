@@ -1,6 +1,6 @@
 ---
 label: What is Teev?
-icon: info
+icon: horizontal-rule
 ---
 
 # What is Teev?

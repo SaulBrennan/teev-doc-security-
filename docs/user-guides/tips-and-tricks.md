@@ -1,6 +1,6 @@
 ---
 label: Tips and Tricks
-icon: lightbulb
+icon: horizontal-rule
 ---
 
 # Tips and Tricks

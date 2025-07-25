@@ -13,8 +13,6 @@ favicon: static/favicon.png
 editor:
   enabled: false
 
-# Note: 'edit:' section removed (no repo specified)
-
 navigation:
   - "Welcome": index.md
   - "Overview": overview/index.md

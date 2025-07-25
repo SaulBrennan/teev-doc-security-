@@ -1,6 +1,7 @@
 ---
 label: User Guides
-icon: book-open
+icon: repo
+order: 190
 ---
 
 # User Guides

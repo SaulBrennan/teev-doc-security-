@@ -1,6 +1,7 @@
 ---
 label: Topic Control and Filtering
-icon: filter
+icon: horizontal-rule
+order: 140
 ---
 
 # Topic Control and Filtering

@@ -1,6 +1,7 @@
 ---
 label: Content Risks & Harmful Output
-icon: alert
+icon: horizontal-rule
+order: 180
 ---
 
 # Content Risks and Harmful Output

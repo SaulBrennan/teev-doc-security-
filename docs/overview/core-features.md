@@ -1,6 +1,6 @@
 ---
 label: Core Features
-icon: star
+icon: horizontal-rule
 ---
 
 # Core Features

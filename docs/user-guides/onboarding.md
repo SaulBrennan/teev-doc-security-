@@ -1,6 +1,6 @@
 ---
 label: Onboarding
-icon: user-plus
+icon: horizontal-rule
 ---
 
 # Onboarding

@@ -1,6 +1,6 @@
 ---
 label: FAQs
-icon: help
+icon: horizontal-rule
 ---
 
 # Frequently Asked Questions

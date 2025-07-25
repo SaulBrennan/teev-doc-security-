@@ -1,10 +1,10 @@
 ---
-label: Differences to CyberSec
+label: From Cyber to LLMSec
 icon: horizontal-rule
 order: 100
 ---
 
-# Differences to CyberSec
+# From Cyber to LLMSec
 As enterprises build AI-powered applications on top of large language models (LLMs), it’s critical to recognize that traditional cybersecurity frameworks no longer apply cleanly. The attack surface, threat landscape, and defense strategies are fundamentally different. Unlike classical systems with structured inputs and clear perimeters, LLMs introduce ambiguous interfaces, emergent behaviors, and novel risks like prompt injection, hallucinations, and training data leakage. These applications operate in a grey zone—where the threats are linguistic, probabilistic, and constantly evolving.
 
 Below is a comparison table highlighting the operational differences between traditional cybersecurity and LLM/AI security (LLMSec). It outlines how attack vectors, monitoring strategies, and security controls diverge, and why enterprises need to adopt a new mindset when securing AI systems.

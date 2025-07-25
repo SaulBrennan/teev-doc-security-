@@ -1,6 +1,6 @@
 ---
 label: Common Issues
-icon: bug
+icon: horizontal-rule
 ---
 
 # Common Issues

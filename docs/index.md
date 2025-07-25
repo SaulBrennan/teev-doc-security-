@@ -1,5 +1,5 @@
 ---
-icon: home
+icon: rocket
 label: Welcome
 ---
 

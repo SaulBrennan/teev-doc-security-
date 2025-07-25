@@ -1,0 +1,28 @@
+---
+label: LLMSec Overview
+icon: horizontal-rule
+order: 2
+---
+
+# LLMSec Overview
+Teev’s AI security framework empowers enterprises to build LLM-powered applications with defense-in-depth. It starts with Governance & Risk Management, guiding policies through an AI Security Council and NIST-aligned risk assessments. Data & Privacy Controls enforce data classification, encryption, and automated retention policies. Secure Prompt & Input Engineering uses pre-prompt filters, schema enforcement, and rate limits to harden inputs. Model-Output Controls apply post-processing filters, strict response schemas, and sanitization to vet outputs. Infrastructure & Execution Safeguards isolate code execution in sandboxes, vet dependencies, and enforce least-privilege networking. Teev’s Red Teaming & Adversarial Testing proactively simulates attacks using DeepTeam and other tools. Finally, Monitoring & Incident Response tracks anomalies in real time, triggers kill switches, and drives continuous improvement.
+
+## Teev's Six Pillar LLMSec Framework
+
+### 1. Governance & Risk Management
+Teev’s recommended Governance & Risk Management framework begins with forming an AI Security Council—a cross-functional advisory group of CSO, legal, product, and AI/ML engineers—to guide policy and compliance. We recommend crafting an Acceptable-Use Policy that clearly outlines prohibited content, data-handling rules, and regulatory obligations (e.g., GDPR, HIPAA). Next, conduct a risk assessment to translate AI-specific threats—bias, hallucinations, and data leakage—into concrete business impacts and prioritize mitigations. Finally, leverage the NIST AI Risk Management Framework—iterating through Govern, Map, Measure, and Manage—to ensure policies and controls remain current, scalable, and aligned with evolving risks and regulations.
+
+### 2. Data & Privacy Controls
+Teev recommends a rigorous approach to data governance in LLM applications. Begin with Data Inventory & Classification, tagging all training corpora and retrieval-augmented generation (RAG) stores by sensitivity level—public, internal, confidential, or regulated—so you know exactly what data is in play. Implement Encryption & Access controls by using managed key services (e.g., AWS KMS, Azure Key Vault) to encrypt data both at rest and in transit, coupled with strict IAM policies that grant least-privilege access to vectors, logs, and storage buckets. Finally, enforce Retention & Deletion by automating the purge of raw conversation logs older than your specified retention period, ensuring that stale or sensitive data is regularly and reliably removed.
+
+### 3. Secure Prompt & Input Engineering
+In Teev’s framework, securing the prompt interface is foundational. Pre-Prompt Filters inspect and block malicious keywords, patterns, control characters, or embedded payloads before they ever reach the model. Where feasible, employ Schema & Type Enforcement—for example, constraining prompts to predefined JSON or XML schemas—to reduce injection risks and improve output predictability. Additionally, apply Rate Limits & Quotas at both user and IP levels to throttle excessive requests, slowing adversarial probing and brute-force attacks. Together, these controls harden the “front door” of your LLM application, ensuring only well-formed, policy-compliant inputs are processed downstream.
+
+### 4. Model-Output Controls
+Teev recommends a multilayered approach to vet every LLM response before it reaches users. First, apply Post-Processing Filters—route outputs through toxicity classifiers (e.g., Detoxify), PII detectors, and antivirus scanners for any code snippets or links—so malicious or sensitive content is caught automatically. Next, enforce Structured Interfaces by defining strict API schemas (JSON, protobuf, etc.) and rejecting free-form text when possible; this reduces both injection and hallucination risks. Finally, implement Sanitization & Escaping to strip or properly escape dangerous characters in code, HTML, or shell contexts, ensuring that any remaining output cannot be interpreted as executable or malicious payload.
+
+### 5. Infrastructure & Execution Safeguards
+To contain and control LLM-driven actions, Teev recommends robust execution boundaries. Use Sandboxed Execution: run any generated code, third-party plugins, or function calls inside isolated containers (e.g., Docker on Kubernetes) with strict CPU, memory, and filesystem limits. Complement this with Dependency Vetting: maintain a whitelist of approved package names and versions, and block typographically similar “slopsquatting” packages to prevent supply-chain attacks. Finally, enforce Least-Privilege Networking by configuring the LLM service’s network policies so it can only communicate with essential internal endpoints—blocking all other egress and ingress traffic by default.
+
+### 6. Red Teaming & Adversarial Testing
+Teev offers a comprehensive AI red-teaming suite to proactively uncover weaknesses before they reach production. The purpose is to simulate real-world attacks—prompt injections, jailbreaks, encoding exploits, and multimodal tricks—to identify blind spots in your prompts, filters, and RAG pipelines. Our frameworks & tools include DeepTeam (an open-source LLM red-teaming toolkit), the Hacken Playbook (structured exercises for prompt fuzzing and context poisoning), and NVIDIA’s FigStep strategies for typographic and visual jailbreaks. The process follows three phases: Plan (define threat scenarios tied to business impact), Execute (run automated and manual tests quarterly), and Analyze & Remediate (triage findings, update controls, and document learnings).

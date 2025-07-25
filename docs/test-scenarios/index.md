@@ -1,6 +1,7 @@
 ---
 label: Test Scenarios
-icon: shield
+icon: beaker
+
 ---
 
 # Test Scenarios

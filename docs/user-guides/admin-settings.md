@@ -1,6 +1,6 @@
 ---
 label: Admin Settings
-icon: settings
+icon: horizontal-rule
 ---
 
 # Admin Settings

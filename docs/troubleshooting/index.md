@@ -1,6 +1,6 @@
 ---
 label: Troubleshooting
-icon: wrench
+icon: tools
 ---
 
 # Troubleshooting

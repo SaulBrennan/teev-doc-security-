@@ -1,6 +1,6 @@
 ---
 label: Contact Support
-icon: mail
+icon: horizontal-rule
 ---
 
 # Contact Support

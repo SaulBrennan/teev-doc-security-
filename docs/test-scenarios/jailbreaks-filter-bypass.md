@@ -1,7 +1,7 @@
 ---
 order: 190
 label: Jailbreaks and Filter Bypass
-icon: unlock
+icon: horizontal-rule
 ---
 
 # Jailbreaks and Filter Bypass

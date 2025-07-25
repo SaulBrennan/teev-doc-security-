@@ -1,6 +1,6 @@
 ---
 label: Getting Started
-icon: play
+icon: horizontal-rule
 ---
 
 # Getting Started

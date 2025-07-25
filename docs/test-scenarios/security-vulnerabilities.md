@@ -1,7 +1,7 @@
 ---
 order: 200
 label: Security Vulnerabilities
-icon: shield-x
+icon: horizontal-rule
 ---
 
 # Security Vulnerabilities
